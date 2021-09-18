@@ -1,0 +1,32 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.panel {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.panel-title {
+  background-color: #ccc;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.panel-content {
+  padding: 10px;
+}
+
+.panel-title + .panel-content {
+  display: none;
+}
+
+.panel-title.open + .panel-content {
+  display: block;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
