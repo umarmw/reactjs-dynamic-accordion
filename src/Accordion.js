@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 
 const Accordion = (props) => {
-  const { openType, children } = props;
+  const { openType, auid, children } = props;
 
   const accordionRef = useRef(null);
 
@@ -33,7 +33,7 @@ const Accordion = (props) => {
   }, [openType]);
 
   return (
-    <div className="accordion" ref={accordionRef}>
+    <div className="accordion" ref={accordionRef} id={auid}>
       {children}
     </div>
   );

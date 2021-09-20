@@ -32,10 +32,15 @@ export default function App() {
           <h2>My subcontent </h2>
           <Audio title="My title" track="single album" />
         </AccordionPanel>
+
+        <AccordionPanel title="Third">
+          <h2>My third subcontent </h2>
+          <Audio title="My title 2021" track="Dual album" />
+        </AccordionPanel>
       </Accordion>
 
       <h2>DeepLinks</h2>
-      <AccordionDeepLink label="Jump" auid="a001" panelId="2" />
+      <AccordionDeepLink label="Jump" auid="a002" panelId="3" />
     </div>
   );
 }

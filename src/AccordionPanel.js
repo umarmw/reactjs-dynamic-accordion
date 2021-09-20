@@ -3,7 +3,9 @@ const AccordionPanel = (props) => {
 
   return (
     <div className="panel">
-      <div className="panel-title">{title}</div>
+      <div className="panel-title">
+        {title} <span className="arrow"></span>
+      </div>
       <div className="panel-content"> {children}</div>
     </div>
   );

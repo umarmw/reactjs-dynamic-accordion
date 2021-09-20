@@ -30,3 +30,18 @@
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
+
+.arrow {
+  border-bottom: 3px solid #000;
+  border-right: 3px solid #000;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  transform: rotate(-135deg);
+  transition: transform 0.5s;
+}
+
+.panel-title.open .arrow {
+  transform: rotate(45deg);
+  transition: transform 0.5s;
+}
